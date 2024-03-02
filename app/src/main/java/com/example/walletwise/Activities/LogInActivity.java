@@ -17,6 +17,7 @@ import com.example.walletwise.R;
 public class LogInActivity extends AppCompatActivity {
         private ImageButton login;
         private TextView forgot;
+        private TextView signUp;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +25,22 @@ public class LogInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_log_in);
         login = findViewById(R.id.login_screen);
         forgot = findViewById(R.id.forgotpass);
+        signUp = findViewById(R.id.sign_up_login);
 
         changeStatusBarColor(getResources().getColor(R.color.status_signup));
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LogInActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(LogInActivity.this, Forgot_Password_Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
         login.setOnClickListener(new View.OnClickListener() {

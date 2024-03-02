@@ -28,6 +28,15 @@
             android:name=".Activities.LoginSignupIntroActivity"
             android:exported="false" />
         <activity
+        android:name=".Activities.EmailSentActivity"
+        android:exported="false" />
+        <activity
+            android:name=".Activities.Forgot_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.SplashActivity"
             android:exported="true">
             <intent-filter>

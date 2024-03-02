@@ -1,7 +1,10 @@
 package com.example.walletwise.Activities;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -16,6 +19,8 @@ public class PinActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pin);
+        changeStatusBarColor(getResources().getColor(R.color.splash_status));
+
 
         GridLayout gridLayout = findViewById(R.id.grid_layout);
 
@@ -73,4 +78,12 @@ public class PinActivity extends AppCompatActivity {
                 });
             }
     }
-    }}
+    }
+    private void changeStatusBarColor(int color) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(color);
+        }
+    }
+}
