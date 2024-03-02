@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EmailSentActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ilustration"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your email is on the way"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="29sp"
+        android:textColor="#0D0E0F"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    Check your email and follow the \n instructions to reset your password."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="300dp"
+        android:layout_margin="10dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/brown_bg"
+        android:text="Continue"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+    <Button
+        android:id="@+id/backtologin"
+        android:layout_width="300dp"
+        android:layout_margin="10dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/brown_bg"
+        android:text="Back to Login"
+        android:textColor="@color/white"
+        app:backgroundTint="@null" />
+
+</LinearLayout>

@@ -29,7 +29,7 @@
         android:textColor="#212325"/>
 
     <ImageButton
-        android:id="@+id/sign_up"
+        android:id="@+id/lets_go_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/home_indicator"
