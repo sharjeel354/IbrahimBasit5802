@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.LoginSignupIntroActivity"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+        <androidx.viewpager.widget.ViewPager
+        android:id="@+id/horizontalviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/spring_dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:dotsColor="#E9AB17"
+            app:dotsCornerRadius="1dp"
+            app:dotsSize="6dp"
+            app:dotsSpacing="6dp"
+            app:dotsStrokeWidth="2dp"
+            app:selectedDotColor="#E9AB17"
+            app:stiffness="300" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/signup"
+        android:backgroundTint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:backgroundTint="@color/white"/>
+
+</LinearLayout>
+</RelativeLayout>

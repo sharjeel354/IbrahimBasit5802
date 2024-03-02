@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="splash_status">#392800</color>
+    <color name="login_status">#F4D58C</color>
+    <color name="status_signup">#E9AB17</color>
 </resources>
